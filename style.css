@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1620px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    z-index: 2;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.logo h3 {
+    font-size: 2.2rem;
+    color: antiquewhite;
+    user-select: none;
+    font-weight: 600;
+}
+
+.nav-links li a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 16px;
+    transition: 0.5s ease;
+    border-radius: 10px;
+}
+
+.nav-links li a:hover{
+    color: blue;
+    background-color: yellowgreen;
+}
+
+.nav-links .active {
+    background-color: red;
+}
+
+/* Header */
+
+.parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url(/img/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.parallax-heading {
+    font-size: 5rem;
+    position: absolute;
+    color: yellowgreen;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+    text-shadow: 0 0.2rem 0.2rem rgba(29, 19, 19, 0.4) ;
+}
+
+.parallax img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    user-select: none;
+    pointer-events: none;
+}
+
+#gate-left {
+    /* position: fixed; */
+    transform: translateX(-282px);
+}
+
+#gate-right {
+    /* position: fixed; */
+    transform: translateX(305px);
+}
+
+#grass {
+    position: absolute;
+    top: 50%;
+}
+
+.Parallax-demo {
+    position: relative;
+    background: #020912;
+    color: #fff;
+    padding-top: 6rem;
+}
+
+.Parallax-demo h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.Parallax-demo p {
+    padding-bottom: 2rem;
+    line-height: 140%;
+}
+
